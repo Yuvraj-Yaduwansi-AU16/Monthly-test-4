@@ -1,0 +1,161 @@
+﻿1- Ans: (d).frameset
+
+2- Ans: (a).aside
+
+
+3- Ans: crossOrigin
+
+
+4- Ans: (b).It defers script execution until the page has been rendered.
+
+
+5- Ans:(c). pseudo-class
+
+6- Ans(b). flex-flow
+
+
+7- Ans:(b). parent to child
+
+
+8- Ans:(c). Lexical
+
+
+9- Ans:(a). setTimeout()
+
+
+10- Ans:(d). navigator
+
+
+				Answers 11-18 :
+
+					Ans11-
+
+Output:
+foo1 returns:
+Object {bar: "hello"}
+
+foo2 returns:
+undefined
+
+Return statement doesn't need to have a value assigned next to it, so if you leave it and go to the next line, it returns undefined from the function as nothing was written along with it.
+
+But when we write any value to return with it, in this case object with key and value, it will return the entire object as a whole.
+
+
+					Ans12. 
+
+Ans:		0
+    		2
+    		2
+num ++ will add 1 after printing as it’s a postfix meaning print now assign later 0 printed
+In second ++num ; num is already 1 after executing previous line therefore now as its prefix value will be incremented first then printed so 2 is printed.
+Num's value is 2 so, lastly it printed 2.
+
+
+					Ans13. 
+
+		  Ans:) 
+			1
+			2
+			4
+As when i === 3 the function has a condition to continue inside if therefore it goes above in for loop and moves on without even going in the next line to execute console.log(i).
+
+
+					Ans14. 
+
+Ans = string
+
+Reason: typeof returns a string “number”, of the type of the value 1 provided in the question, and when we check the value returned by typeof i.e.number, it will be in string as typeof ‘number’ = string.
+
+					Ans15
+ 
+
+Closure means that an inner function always has access to the variables and parameters of its outer function, even after the outer function has returned.
+
+
+Inner function can access variables and parameters of an outer function (however, cannot access arguments object of outer function). Consider the following example.
+
+function OuterFunction() {
+
+    var outerVariable = 1;
+
+    function InnerFunction() {
+        alert(outerVariable);
+    }
+
+    InnerFunction();
+}
+In the above example, InnerFunction() can access outerVariable even if it will be executed separately. Consider the following example.
+
+Example: Closure
+function OuterFunction() {
+
+    var outerVariable = 100;
+
+    function InnerFunction() {
+        alert(outerVariable);
+    }
+
+    return InnerFunction;
+}
+var innerFunc = OuterFunction();
+
+innerFunc(); // 100
+In the above example, return InnerFunction; returns InnerFunction definition from OuterFunction when you call OuterFunction(). A variable innerFunc reference the InnerFunction only, not the OuterFunction(). So now, when you call innerFunc(), it can still access outerVariable which is declared in OuterFunction(). This is called Closure.
+
+				Ans-16-	
+
+
+Code after 1-pass:
+			var first_name, last_name, result;
+			function concat(x, y) {
+				return x + y;
+			}
+			result = concat(first_name, last_name);
+			first_name = “John”;
+			last_name = “Doe”;
+
+				Ans17. 
+
+
+The difference between anonymous and callback function is that;
+
+1-Anonymous function doesn’t need to be named, while callback functions are named
+
+2-Callback function doesn’t take in an argument when called within another function while anonymous function can take in arguments.
+
+Consider the example code below;
+
+var a = [1,2,3]
+--Callback function
+function myCallback(x){
+ return x+1;
+}
+console.log(Arr.map(myCallback));
+
+Here, callback function is myCallback() , which takes an argument x and returns an increment of the argument x+1. We see that our Array.prototype.map() takes as argument our callback function.
+We could also write it as:
+
+var a = [1,2,3]
+
+--Anonymous function goes directly 
+console.log(Arr.map(function(x){ return x+1}));
+
+The code above will also do the job, it uses an anonymous function. i.e., a function without a name function(x){return x+1}. Anonymous functions as the name might imply are functions without names. The function is only referred to once, so a variable name doesn’t need to be wasted on it.
+
+
+
+
+
+
+
+
+
+					Ans18
+It is a way of event propagation in the HTML DOM. It relates to the order in which events are propagated in nested elements.
+In bubbling, when an event happens to a child element then it propagates all the way up to its parents and their parents and so on and similarly it occurs with parents to child. In other words, events bubble up or propagate the DOM tree upwards.
+
+It can be stop by stopPropagation() method if we want to stop the event flow from event target element to top element in DOM.
+
+
+
