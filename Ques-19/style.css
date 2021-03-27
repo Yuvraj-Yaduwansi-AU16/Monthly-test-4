@@ -1,0 +1,33 @@
+div *{
+    display: block;
+    margin: 1.5rem;
+    text-align: center;
+}
+body{
+    position: relative;
+}
+div.container{
+    position: absolute;
+    left: 48vw;
+    width: 40vw;
+    top: 48vh;
+    transform: translate(-50%,-50%);
+    background-color: white !important;
+}
+div label{
+    font-size: 1.5rem;
+    font-style: italic;
+}
+div input{
+    width: 20vw;
+    height: 3vh;
+    margin-left: 10vw;
+}
+div button{
+    margin-left: 17vw;
+    font-size: 1.25rem;
+    width: 7vw;
+    height: 5vh;
+    background-color:rgb(0, 255, 149);
+    overflow: hidden;
+}
